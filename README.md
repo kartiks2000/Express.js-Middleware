@@ -19,3 +19,11 @@ res is the response
 next is actually a function which passes the request to the further middleware.
 
 If we dont use next(), then our request wont be forwarded to the next middleware and our request will die without any response.
+
+
+We NOT always have to call next() we could also send a response instead and in express we dont need to use setHeader() or write() to send response using -
+
+res.send('')
+
+we can send anything inside it like html, text, file.
+
